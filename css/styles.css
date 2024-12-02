@@ -1,0 +1,175 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #007BFF; /* Blue color */
+    padding: 10px 0;
+}
+
+.navbar .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.tagline h1 {
+    color: #fff;
+    margin: 0;
+}
+
+/* Introduction Video */
+.intro-video {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.intro-video video {
+    width: 80%;
+    max-width: 800px;
+    height: auto;
+}
+
+/* Image Slider */
+.image-slider {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    background-color: #f0f0f0;
+}
+
+.slider-container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.slider {
+    display: flex;
+    width: 300%;
+    animation: slide 12s infinite;
+}
+
+.slide {
+    width: 33.3333%;
+    flex-shrink: 0;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+}
+
+/* Slider Animation */
+@keyframes slide {
+    0% { transform: translateX(0%); }
+    33% { transform: translateX(-33.3333%); }
+    66% { transform: translateX(-66.6666%); }
+    100% { transform: translateX(-100%); }
+}
+
+/* Contact Us Form */
+.contact-form {
+    background-color: #007BFF; /* Blue color */
+    padding: 40px 0;
+    color: #fff;
+    text-align: center;
+}
+
+.contact-form h2 {
+    margin-bottom: 20px;
+}
+
+.contact-form .container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 80%;
+    max-width: 500px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #0056b3;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #003d80;
+}
+
+/* Footer */
+.site-footer {
+    background-color: #007BFF; /* Blue color */
+    color: #fff;
+    padding: 20px 0;
+}
+
+.site-footer .container {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.site-footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+.site-footer li {
+    margin: 0 10px;
+}
+
+.site-footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.site-footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar .container {
+        flex-direction: column;
+    }
+    .tagline h1 {
+        margin-top: 10px;
+        text-align: center;
+    }
+    .intro-video video {
+        width: 100%;
+    }
+    .contact-form input,
+    .contact-form textarea {
+        width: 100%;
+    }
+}
