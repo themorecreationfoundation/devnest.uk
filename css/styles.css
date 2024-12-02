@@ -2,7 +2,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-image: url('../../images/background.jpg'); /* Replace 'background.jpg' with your background image path */
+    background-image: url('../imagesfolder/background.jpg'); /* Corrected path */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
