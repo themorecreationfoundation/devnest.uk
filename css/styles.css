@@ -39,14 +39,33 @@ body {
 
 /* Introduction Video */
 .intro-video {
-    margin-top: 134px; /* Adjusted to prevent content from hiding behind navbar */
+    position: relative;
+    margin-top: 124px; /* Adjust based on navbar height */
     width: 100%;
 }
 
-.intro-video video {
-    width: 100%;
-    height: auto;
-    display: block;
+/* Unmute Button */
+.unmute-button {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 123, 255, 0.9);
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1001;
+    font-size: 16px;
+}
+
+.unmute-button:hover {
+    background-color: rgba(0, 123, 255, 1);
+}
+
+.unmute-button:focus {
+    outline: none;
 }
 
 /* Image Slider */
