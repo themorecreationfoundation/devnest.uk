@@ -29,10 +29,10 @@ body {
 }
 
 .logo img {
-    height: 50px;
+    height: 100px;
 }
 
-.tagline h1 {
+.tagline h2 {
     color: #fff;
     margin: 0;
 }
