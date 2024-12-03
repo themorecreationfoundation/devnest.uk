@@ -2,28 +2,16 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-image: url('../imagesfolder/background.jpg'); /* Corrected path */
+    background-image: url('../imagesfolder/background.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed; /* Keeps the background fixed during scroll */
-}
-
-/* Overlay for Better Readability (Optional) */
-body::before {
-    content: '';
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.4); /* Adjust opacity as needed */
-    z-index: -1;
+    background-attachment: fixed;
 }
 
 /* Navigation Bar */
 .navbar {
-    background-color: rgba(0, 123, 255, 0.9); /* Semi-transparent blue */
+    background-color: rgba(0, 123, 255, 0.9);
     padding: 10px 0;
 }
 
@@ -46,14 +34,14 @@ body::before {
 
 /* Introduction Video */
 .intro-video {
-    padding: 20px 0;
-    text-align: center;
+    width: 100%;
+    margin: 0;
 }
 
 .intro-video video {
-    width: 80%;
-    max-width: 800px;
+    width: 100%;
     height: auto;
+    display: block;
 }
 
 /* Image Slider */
@@ -61,8 +49,6 @@ body::before {
     position: relative;
     overflow: hidden;
     width: 100%;
-    /* Remove background color to show the background image */
-    /* background-color: #f0f0f0; */
 }
 
 .slider-container {
@@ -86,7 +72,7 @@ body::before {
 
 /* Contact Us Form */
 .contact-form {
-    background-color: rgba(0, 123, 255, 0.9); /* Semi-transparent blue */
+    background-color: rgba(0, 123, 255, 0.9);
     padding: 40px 0;
     color: #fff;
     text-align: center;
@@ -115,7 +101,7 @@ body::before {
     margin-bottom: 15px;
     border: none;
     border-radius: 5px;
-    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent input background */
+    background-color: rgba(255, 255, 255, 0.8);
 }
 
 .contact-form button {
@@ -133,7 +119,7 @@ body::before {
 
 /* Footer */
 .site-footer {
-    background-color: rgba(0, 123, 255, 0.9); /* Semi-transparent blue */
+    background-color: rgba(0, 123, 255, 0.9);
     color: #fff;
     padding: 20px 0;
 }
@@ -173,9 +159,6 @@ body::before {
     .tagline h1 {
         margin-top: 10px;
         text-align: center;
-    }
-    .intro-video video {
-        width: 100%;
     }
     .contact-form input,
     .contact-form textarea {
