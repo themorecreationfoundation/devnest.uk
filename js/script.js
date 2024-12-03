@@ -67,21 +67,3 @@ document.addEventListener('DOMContentLoaded', () => {
     startSlider();
 });
 
-document.addEventListener('DOMContentLoaded', () => {
-    const video = document.querySelector('.intro-video video');
-
-    // Attempt to play the video
-    const playPromise = video.play();
-
-    if (playPromise !== undefined) {
-        playPromise
-            .then(() => {
-                // Autoplay started
-            })
-            .catch(error => {
-                // Autoplay was prevented
-                // Show a play button or inform the user
-                console.log('Autoplay prevented:', error);
-            });
-    }
-});
