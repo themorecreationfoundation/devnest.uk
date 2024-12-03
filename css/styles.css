@@ -1,7 +1,11 @@
-/* Reset default margins and paddings */
-* {
+/* Reset default margins and paddings for body */
+body {
     margin: 0;
     padding: 0;
+}
+
+/* Apply box-sizing to all elements */
+*, *::before, *::after {
     box-sizing: border-box;
 }
 /* Navigation Bar */
@@ -18,8 +22,17 @@
     margin: 0 auto;
 }
 
+/* Adjust other elements as necessary */
+.intro-video,
+.image-slider,
+.contact-form,
+.site-footer {
+    margin: 0;
+    padding: 0;
+}
+
 .logo img {
-    height: 50px;
+    height: 100px;
 }
 
 .tagline h1 {
