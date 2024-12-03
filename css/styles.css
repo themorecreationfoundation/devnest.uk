@@ -39,7 +39,7 @@ body {
 
 /* Introduction Video */
 .intro-video {
-    margin-top: 124px; /* Adjusted to prevent content from hiding behind navbar */
+    margin-top: 128px; /* Adjusted to prevent content from hiding behind navbar */
     width: 100%;
 }
 
