@@ -36,19 +36,22 @@ document.addEventListener('DOMContentLoaded', () => {
         isPlaying = false;
     }
 
+    function resetSliderInterval() {
+        clearInterval(sliderInterval);
+        if (isPlaying) {
+            startSlider();
+        }
+    }
+
     // Event Listeners for Control Buttons
     nextBtn.addEventListener('click', () => {
         showNextSlide();
-        if (isPlaying) {
-            resetSliderInterval();
-        }
+        resetSliderInterval();
     });
 
     prevBtn.addEventListener('click', () => {
         showPrevSlide();
-        if (isPlaying) {
-            resetSliderInterval();
-        }
+        resetSliderInterval();
     });
 
     pausePlayBtn.addEventListener('click', () => {
@@ -59,13 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    function resetSliderInterval() {
-        clearInterval(sliderInterval);
-        startSlider();
-    }
-
     // Initialize Slider
     showSlide(currentIndex);
     startSlider();
 });
-
