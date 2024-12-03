@@ -48,11 +48,14 @@
 
 .slider {
     display: flex;
+    flex-wrap: nowrap; /* Ensure no wrapping */
     transition: transform 1s ease-in-out;
+    height: auto; /* Add this line */
 }
 
 .slide {
     min-width: 100%;
+    flex-shrink: 0;
 }
 
 .slide img {
