@@ -45,18 +45,72 @@
     </div>
 </section>
 
+    /* Contact Form Styles */
+    .contact-form h2 {
+        color: #000;
+    }
+
+    .contact-input {
+        color: #000;
+        /* Add any additional styles for inputs here */
+        width: 80%;
+        max-width: 500px;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    .contact-input::placeholder {
+        color: #000;
+    }
+
+    .contact-input::-webkit-input-placeholder {
+        color: #000;
+    }
+
+    .contact-input:-ms-input-placeholder {
+        color: #000;
+    }
+
+    .contact-input::-ms-input-placeholder {
+        color: #000;
+    }
+
+    /* Button Styles */
+    .contact-form button {
+        padding: 10px 20px;
+        border: none;
+        background-color: #ff7800;
+        color: #fff;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .contact-form button:hover {
+        background-color: #e66900;
+    }
+
+    /* Container Styles */
+    .contact-form .container {
+        text-align: center;
+        padding: 40px 0;
+    }
+    </style>
+</head>
+<body>
     <!-- Contact Us Form -->
-<section class="contact-form">
-    <div class="container">
-        <h2 style="color: #000;">Contact Us</h2>
-        <form action="contact-form-handler.php" method="post">
-            <input type="text" name="name" placeholder="Your Name" required style="color: #000;">
-            <input type="email" name="email" placeholder="Your Email" required style="color: #000;">
-            <textarea name="message" placeholder="Your Message" required style="color: #000;"></textarea>
-            <button type="submit" style="color: #fff; background-color: #ff7800;">Send Message</button>
-        </form>
-    </div>
-</section>
+    <section class="contact-form">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form action="contact-form-handler.php" method="post">
+                <input type="text" name="name" placeholder="Your Name" required class="contact-input">
+                <input type="email" name="email" placeholder="Your Email" required class="contact-input">
+                <textarea name="message" placeholder="Your Message" required class="contact-input"></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
 
 
     <!-- Footer -->
