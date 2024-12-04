@@ -40,6 +40,8 @@ body {
 /* Introduction Video */
 .intro-video {
     position: relative;
+    margin: 0; /* Reset margins */
+    padding: 0; /* Reset padding */
     margin-top: 124px; /* Adjust based on navbar height */
     width: 100%;
 }
@@ -49,11 +51,14 @@ body {
     position: relative;
     overflow: hidden;
     width: 100%;
+    margin: 0; /* Reset margins */
+    padding: 0; /* Reset padding */
 }
 
 .slider-container {
     width: 100%;
-    margin: 0 auto;
+    margin: 0; /* Reset margins */
+    padding: 0; /* Reset padding */
 }
 
 .slider {
