@@ -78,8 +78,6 @@ body {
 /* Control Buttons */
 .control-btn {
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
     background-color: rgba(0, 0, 0, 0.5);
     border: none;
     color: #fff;
@@ -90,35 +88,27 @@ body {
 }
 
 .prev-btn {
+    top: 50%;
     left: 10px;
+    transform: translateY(-50%);
 }
 
 .next-btn {
+    top: 50%;
     right: 10px;
+    transform: translateY(-50%);
 }
 
 .pause-play-btn {
-    position: absolute;
-    bottom: 20px;
+    top: 50%;
     left: 50%;
-    transform: translateX(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: #fff;
-    border: none;
-    padding: 10px;
-    border-radius: 50%;
-    cursor: pointer;
-    z-index: 10;
-    font-size: 1.5em; /* Increase font size for better visibility */
-}
-
-.pause-play-btn:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+    transform: translate(-50%, -50%); /* Center the button */
 }
 
 .control-btn:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
+
 
 /* Contact Us Form */
 .contact-form {
