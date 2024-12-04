@@ -160,9 +160,10 @@ body {
 
 /* Contact Us Form */
 .contact-form {
-    background-color: rgba(0, 123, 255, 0.9);
+    background-color: #fff; /* Change background to white */
     padding: 40px 0;
-    color: #fff;
+    color: : #000;
+    font-family: 'Futura', sans-serif; /* Change font to Futura */
     text-align: center;
 }
 
