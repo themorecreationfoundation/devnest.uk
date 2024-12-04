@@ -26,13 +26,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function startSlider() {
         sliderInterval = setInterval(showNextSlide, 4000); // Change slide every 4 seconds
-        pausePlayBtn.textContent = 'Pause';
+        pausePlayBtn.textContent = '⏸️'; // Pause symbol
+        pausePlayBtn.setAttribute('aria-label', 'Pause Slider');
         isPlaying = true;
     }
 
     function stopSlider() {
         clearInterval(sliderInterval);
-        pausePlayBtn.textContent = 'Play';
+        pausePlayBtn.textContent = '▶️'; // Play symbol
+        pausePlayBtn.setAttribute('aria-label', 'Play Slider');
         isPlaying = false;
     }
 
@@ -66,4 +68,3 @@ document.addEventListener('DOMContentLoaded', () => {
     showSlide(currentIndex);
     startSlider();
 });
-
