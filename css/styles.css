@@ -167,16 +167,33 @@ body {
     text-align: center;
 }
 
-/* Ensure contact form text is white */
-.contact-form input,
-.contact-form textarea,
-.contact-form label,
-.contact-form * {
-    color: #000 !important; /* Use !important to override any other styles */
-}
 
 .contact-form h2 {
+    color: #000;
     margin-bottom: 20px;
+}
+
+.contact-input {
+    color: #000; /* User-entered text color */
+    /* Additional styling for inputs if needed */
+}
+
+/* Placeholder text styles */
+.contact-input::placeholder {
+    color: #000; /* Placeholder text color */
+}
+
+/* For cross-browser compatibility */
+.contact-input::-webkit-input-placeholder {
+    color: #000;
+}
+
+.contact-input:-ms-input-placeholder {
+    color: #000;
+}
+
+.contact-input::-ms-input-placeholder {
+    color: #000;
 }
 
 .contact-form .container {
