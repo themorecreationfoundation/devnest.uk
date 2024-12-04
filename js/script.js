@@ -25,18 +25,18 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function startSlider() {
-        sliderInterval = setInterval(showNextSlide, 4000); // Change slide every 6 seconds
-        pausePlayBtn.innerHTML = '&#10074;&#10074;'; // Pause symbol matching arrow style
-        pausePlayBtn.setAttribute('aria-label', 'Pause Slider');
-        isPlaying = true;
-    }
+    sliderInterval = setInterval(showNextSlide, 4000); // Change slide every 4 seconds
+    pausePlayBtn.innerHTML = '&#10074;&#10074;'; // Pause symbol matching arrow style
+    pausePlayBtn.setAttribute('aria-label', 'Pause Slider');
+    isPlaying = true;
+}
 
-    function stopSlider() {
-        clearInterval(sliderInterval);
-        pausePlayBtn.innerHTML = '&#9658;'; // Play symbol matching arrow style
-        pausePlayBtn.setAttribute('aria-label', 'Play Slider');
-        isPlaying = false;
-    }
+function stopSlider() {
+    clearInterval(sliderInterval);
+    pausePlayBtn.innerHTML = '&#9658;'; // Play symbol matching arrow style
+    pausePlayBtn.setAttribute('aria-label', 'Play Slider');
+    isPlaying = false;
+}
 
     function resetSliderInterval() {
         clearInterval(sliderInterval);
