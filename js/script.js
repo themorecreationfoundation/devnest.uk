@@ -26,14 +26,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function startSlider() {
         sliderInterval = setInterval(showNextSlide, 4000); // Change slide every 4 seconds
-        pausePlayBtn.textContent = '⏸️'; // Pause symbol
+        pausePlayBtn.innerHTML = '&#10074;&#10074;'; // Pause symbol matching arrow style
         pausePlayBtn.setAttribute('aria-label', 'Pause Slider');
         isPlaying = true;
     }
 
     function stopSlider() {
         clearInterval(sliderInterval);
-        pausePlayBtn.textContent = '▶️'; // Play symbol
+        pausePlayBtn.innerHTML = '&#9658;'; // Play symbol matching arrow style
         pausePlayBtn.setAttribute('aria-label', 'Play Slider');
         isPlaying = false;
     }
