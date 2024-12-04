@@ -41,9 +41,17 @@ body {
 .intro-video {
     position: relative;
     margin: 0; /* Reset margins */
-    padding: 0; /* Reset padding */
-    margin-top: 124px; /* Adjust based on navbar height */
+    padding: 0 0 1px 0; /* Reset padding and add 1px bottom padding */
+    margin-top: 70px; /* Offset for fixed navbar */
+    line-height: 0; /* Reset line-height */
+}
+
+.intro-video video {
     width: 100%;
+    height: auto;
+    display: block;
+    margin: 0;
+    padding: 0;
 }
 
 /* Image Slider */
@@ -53,6 +61,7 @@ body {
     width: 100%;
     margin: 0; /* Reset margins */
     padding: 0; /* Reset padding */
+    line-height: 0; /* Reset line-height */
 }
 
 .slider-container {
