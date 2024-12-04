@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function startSlider() {
-        sliderInterval = setInterval(showNextSlide, 4000); // Change slide every 4 seconds
+        sliderInterval = setInterval(showNextSlide, 4000); // Change slide every 6 seconds
         pausePlayBtn.innerHTML = '&#10074;&#10074;'; // Pause symbol matching arrow style
         pausePlayBtn.setAttribute('aria-label', 'Pause Slider');
         isPlaying = true;
