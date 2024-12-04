@@ -162,9 +162,15 @@ body {
 .contact-form {
     background-color: #fff; /* Change background to white */
     padding: 40px 0;
-    color:  #fff; /* Change text color to white */
+    color: #fff; /* Change text color to white */
     font-family: 'Futura', sans-serif; /* Change font to Futura */
     text-align: center;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form label {
+    color: #fff; /* Ensure text inside inputs and labels is also white */
 }
 
 .contact-form h2 {
