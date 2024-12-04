@@ -162,7 +162,7 @@ body {
 .contact-form {
     background-color: #fff; /* Change background to white */
     padding: 40px 0;
-    color: #000; /* Change text color to black */
+    color:  #fff; /* Change text color to white */
     font-family: 'Futura', sans-serif; /* Change font to Futura */
     text-align: center;
 }
