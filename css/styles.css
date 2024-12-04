@@ -167,10 +167,12 @@ body {
     text-align: center;
 }
 
+/* Ensure contact form text is white */
 .contact-form input,
 .contact-form textarea,
-.contact-form label {
-    color: #fff; /* Ensure text inside inputs and labels is also white */
+.contact-form label,
+.contact-form * {
+    color: #fff !important; /* Use !important to override any other styles */
 }
 
 .contact-form h2 {
