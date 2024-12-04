@@ -162,7 +162,7 @@ body {
 .contact-form {
     background-color: #fff; /* Change background to white */
     padding: 40px 0;
-    color: #fff; /* Change text color to white */
+    color: #000; /* Change text color to white */
     font-family: 'Futura', sans-serif; /* Change font to Futura */
     text-align: center;
 }
@@ -172,7 +172,7 @@ body {
 .contact-form textarea,
 .contact-form label,
 .contact-form * {
-    color: #fff !important; /* Use !important to override any other styles */
+    color: #000 !important; /* Use !important to override any other styles */
 }
 
 .contact-form h2 {
@@ -205,7 +205,7 @@ body {
     padding: 10px 20px;
     border: none;
     background-color: #ff7800; /* Change button color to #ff7800 */
-    color: #fff;
+    color: #000;
     border-radius: 5px;
     cursor: pointer;
 }
