@@ -81,12 +81,23 @@ body {
     background-color: rgba(0, 0, 0, 0.5);
     border: none;
     color: #fff;
-    font-size: 2em;
-    padding: 10px;
     cursor: pointer;
     z-index: 10;
+    font-size: 2em;
+    /* Remove padding from the base class */
+    padding: 0;
+    /* Center content inside buttons */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+.prev-btn, .next-btn, .pause-play-btn {
+    width: 50px;    /* Set a fixed width */
+    height: 50px;   /* Set a fixed height */
+}
+
+/* Individual Button Positions */
 .prev-btn {
     top: 50%;
     left: 10px;
@@ -102,9 +113,11 @@ body {
 .pause-play-btn {
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); /* Center the button */
+    transform: translate(-50%, -50%);
+    border-radius: 0; /* Make it square; set to 50% for circle */
 }
 
+/* Hover Effects */
 .control-btn:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
