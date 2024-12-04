@@ -195,20 +195,21 @@ body {
 .contact-form button {
     padding: 10px 20px;
     border: none;
-    background-color: #0056b3;
+    background-color: #ff7800; /* Change button color to #ff7800 */
     color: #fff;
     border-radius: 5px;
     cursor: pointer;
 }
 
 .contact-form button:hover {
-    background-color: #003d80;
+    background-color: #e66a00; /* Darken button color on hover */
 }
 
 /* Footer */
 .site-footer {
-    background-color: rgba(0, 123, 255, 0.9);
-    color: #fff;
+    background-color: #fff; /* Change background to white */
+    color: #000; /* Change text color to black */
+    font-family: 'Futura', sans-serif; /* Change font to Futura */
     padding: 20px 0;
 }
 
@@ -231,7 +232,7 @@ body {
 }
 
 .site-footer a {
-    color: #fff;
+    color: #000; /* Change link color to black */
     text-decoration: none;
 }
 
