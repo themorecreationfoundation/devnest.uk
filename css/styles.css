@@ -37,13 +37,14 @@ body {
     font-family: 'Futura', sans-serif;
     margin: 0;
 }
+
 /* Introduction Video */
 .intro-video {
     position: relative;
-    margin: 0; /* Reset margins */
-    padding: 0 0 1px 0; /* Reset padding and add 1px bottom padding */
+    margin: 0;
+    padding: 0 0 1px 0;
     margin-top: 124px; /* Offset for fixed navbar */
-    line-height: 0; /* Reset line-height */
+    line-height: 0;
 }
 
 .intro-video video {
@@ -59,56 +60,37 @@ body {
     position: relative;
     overflow: hidden;
     width: 100%;
-    margin: 0; /* Reset margins */
-    padding: 0; /* Reset padding */
-    line-height: 0; /* Reset line-height */
+    margin: 0;
+    padding: 0;
+    line-height: 0;
 }
 
 .slider-container {
     width: 100%;
-    margin: 0; /* Reset margins */
-    padding: 0; /* Reset padding */
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Ensure no horizontal scroll */
 }
 
 .slider {
     display: flex;
-    flex-wrap: nowrap; /* Ensure no wrapping */
+    flex-wrap: nowrap;
     transition: transform 1s ease-in-out;
+    width: 100%;
 }
 
 .slide {
-    min-width: 100%;
+    width: 100%; /* Ensure each slide is exactly 100% of viewport width */
     flex-shrink: 0;
-    height: auto; /* Change from fixed height to auto */
+    height: auto;
 }
 
 .slide img {
     width: 100%;
-    height: auto; /* Change from fixed height to auto */
-    object-fit: cover; /* Ensure images fill the slide and maintain aspect ratio */
+    height: auto;
+    object-fit: cover;
+    display: block; /* Remove any inline spacing issues */
 }
-
-/* Responsive Styles */
-@media (max-width: 768px) {
-    .navbar .container {
-        flex-direction: column;
-    }
-    .tagline h1 {
-        margin-top: 10px;
-        text-align: center;
-    }
-    .contact-form input,
-    .contact-form textarea {
-        width: 100%;
-    }
-    .slide {
-        height: auto; /* Ensure responsive height */
-    }
-    .slide img {
-        height: auto; /* Ensure responsive height */
-    }
-}
-
 
 /* Control Buttons */
 .control-btn {
@@ -119,17 +101,15 @@ body {
     cursor: pointer;
     z-index: 10;
     font-size: 2em;
-    /* Remove padding from the base class */
     padding: 0;
-    /* Center content inside buttons */
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .prev-btn, .next-btn, .pause-play-btn {
-    width: 50px;    /* Set a fixed width */
-    height: 50px;   /* Set a fixed height */
+    width: 50px;
+    height: 50px;
 }
 
 /* Individual Button Positions */
@@ -149,7 +129,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    border-radius: 0; /* Make it square; set to 50% for circle */
+    border-radius: 0;
 }
 
 /* Hover Effects */
@@ -157,16 +137,14 @@ body {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
-
 /* Contact Us Form */
 .contact-form {
-    background-color: #fff; /* Change background to white */
+    background-color: #fff;
     padding: 40px 0;
-    color: #000; /* Change text color to white */
-    font-family: 'Futura', sans-serif; /* Change font to Futura */
+    color: #000;
+    font-family: 'Futura', sans-serif;
     text-align: center;
 }
-
 
 .contact-form h2 {
     color: #000;
@@ -174,24 +152,19 @@ body {
 }
 
 .contact-input {
-    color: #000; /* User-entered text color */
-    /* Additional styling for inputs if needed */
+    color: #000;
 }
 
 /* Placeholder text styles */
 .contact-input::placeholder {
-    color: #000; /* Placeholder text color */
+    color: #000;
 }
-
-/* For cross-browser compatibility */
 .contact-input::-webkit-input-placeholder {
     color: #000;
 }
-
 .contact-input:-ms-input-placeholder {
     color: #000;
 }
-
 .contact-input::-ms-input-placeholder {
     color: #000;
 }
@@ -215,27 +188,27 @@ body {
     margin-bottom: 15px;
     border: none;
     border-radius: 5px;
-    background-color: #ff7800; /* Change input box color to #ff7800 */
+    background-color: #ff7800;
 }
 
 .contact-form button {
     padding: 10px 20px;
     border: none;
-    background-color: #ff7800; /* Change button color to #ff7800 */
+    background-color: #ff7800;
     color: #000;
     border-radius: 5px;
     cursor: pointer;
 }
 
 .contact-form button:hover {
-    background-color: #e66a00; /* Darken button color on hover */
+    background-color: #e66a00;
 }
 
 /* Footer */
 .site-footer {
-    background-color: #fff; /* Change background to white */
-    color: #000; /* Change text color to black */
-    font-family: 'Futura', sans-serif; /* Change font to Futura */
+    background-color: #fff;
+    color: #000;
+    font-family: 'Futura', sans-serif;
     padding: 20px 0;
 }
 
@@ -258,7 +231,7 @@ body {
 }
 
 .site-footer a {
-    color: #000; /* Change link color to black */
+    color: #000;
     text-decoration: none;
 }
 
@@ -278,5 +251,17 @@ body {
     .contact-form input,
     .contact-form textarea {
         width: 100%;
+    }
+    /* Ensuring the slider maintains full-width single images on mobile */
+    .slider {
+        width: 100%;
+    }
+    .slide {
+        width: 100%;
+    }
+    .slide img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
     }
 }
