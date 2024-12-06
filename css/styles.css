@@ -85,7 +85,7 @@ body {
 .slide img {
     width: 100%;
     height: auto; /* Change from fixed height to auto */
-    object-fit: cover; /* Ensure images fill the slide and maintain aspect ratio */
+    object-fit: contain; /* Ensure images fill the slide and maintain aspect ratio */
 }
 
 /* Responsive Styles */
