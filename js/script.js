@@ -73,3 +73,41 @@ document.addEventListener('DOMContentLoaded', () => {
     showSlide(currentIndex);
     startSlider();
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const termsLink = document.getElementById('termsLink');
+    const privacyLink = document.getElementById('privacyLink');
+    const termsModal = document.getElementById('termsModal');
+    const privacyModal = document.getElementById('privacyModal');
+
+    // Open Terms Modal
+    termsLink.addEventListener('click', (e) => {
+        e.preventDefault();
+        termsModal.style.display = 'block';
+    });
+
+    // Open Privacy Modal
+    privacyLink.addEventListener('click', (e) => {
+        e.preventDefault();
+        privacyModal.style.display = 'block';
+    });
+
+    // Close the modals when the close button (x) is clicked
+    document.querySelectorAll('.close-btn').forEach((btn) => {
+        btn.addEventListener('click', () => {
+            const modalId = btn.getAttribute('data-close');
+            document.getElementById(modalId).style.display = 'none';
+        });
+    });
+
+    // Close the modals when clicking anywhere outside the modal content
+    window.addEventListener('click', (e) => {
+        if (e.target === termsModal) {
+            termsModal.style.display = 'none';
+        }
+        if (e.target === privacyModal) {
+            privacyModal.style.display = 'none';
+        }
+    });
+});
+
