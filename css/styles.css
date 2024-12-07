@@ -28,8 +28,10 @@ body {
     margin: 0 auto;
 }
 
+/* Adjusted logo for responsive scaling */
 .logo img {
-    height: 100px;
+    height: auto;
+    max-width: 100%; /* Ensures the logo can shrink if needed */
 }
 
 .tagline h1 {
@@ -243,25 +245,47 @@ body {
 @media (max-width: 768px) {
     .navbar .container {
         flex-direction: column;
+        align-items: center; /* Center elements vertically on small screens */
     }
+
+    .logo img {
+        max-width: 60%; /* Scale down the logo on smaller screens */
+    }
+
     .tagline h1 {
-        margin-top: 10px;
+        margin-top: 5px;
         text-align: center;
+        font-size: 1.2rem; /* Reduce tagline font size for smaller screens */
     }
+
     .contact-form input,
     .contact-form textarea {
         width: 100%;
     }
+
     /* Ensuring the slider maintains full-width single images on mobile */
     .slider {
         width: 100%;
     }
+
     .slide {
         width: 100%;
     }
+
     .slide img {
         width: 100%;
         height: auto;
         object-fit: cover;
+    }
+}
+
+/* Further adjustments for very small screens */
+@media (max-width: 375px) {
+    .logo img {
+        max-width: 50%; /* Even smaller for very narrow screens */
+    }
+
+    .tagline h1 {
+        font-size: 1rem; /* Adjust tagline size to ensure it fits nicely */
     }
 }
