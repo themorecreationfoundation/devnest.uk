@@ -182,7 +182,16 @@ body {
     align-items: center;
 }
 
-.contact-form input,
+.contact-form input {
+    width: 80%;
+    max-width: 500px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff7800;
+    /* No height specified, so they stay the original size */
+}
 .contact-form textarea {
     width: 80%;
     max-width: 500px;
@@ -191,6 +200,7 @@ body {
     border: none;
     border-radius: 5px;
     background-color: #ff7800;
+    height: 150px; /* Only the textarea is given a height */
 }
 
 .contact-form button {
