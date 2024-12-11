@@ -200,7 +200,7 @@ body {
     border: none;
     border-radius: 5px;
     background-color: #ff7800;
-    height: 150px; /* Only the textarea is given a height */
+    height: 150px; /* Only the textarea is given a height */ 
 }
 
 .contact-form button {
